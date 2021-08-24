@@ -1,0 +1,31 @@
+<!--<h1 mat-dialog-title>Editando Estudiante con ID: {{estudiante.id}}</h1>-->
+<div class="dialogo" mat-dialog-content>
+    <form class="formulario" [formGroup]="registerForm">
+
+        <div *ngIf=estudiante?.id class="form-group">
+            <label for="id">Id: {{estudiante.id}}</label><br>
+        </div>
+
+        <div class="form-group">
+            <label for="branch">Branch:</label><br>
+            <input type="name" name="branch" required="" id="branch" class="form-control" formControlName="branch"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="coments">Coments:</label><br>
+            <input type="name" name="coments" required="" class="form-control" id="coments"
+                formControlName="coments"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="num_hours_week">Nº Horas:</label><br>
+            <input type="name" name="num_hours_week" required="" id="num_hours_week" class="form-control"
+                formControlName="num_hours_week"><br>
+        </div>
+
+        <div class="space-top" mat-dialog-actions>
+            <button mat-raised-button disable (click)="onNoClick()">CERRAR</button>
+            <button (click)="aniadirDatos()" mat-raised-button color="primary" cdkFocusInitial>ENVIAR</button>
+        </div>
+    </form>
+</div>

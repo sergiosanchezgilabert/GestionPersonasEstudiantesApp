@@ -1,0 +1,19 @@
+<mat-toolbar>
+
+  <a href="/" class="titulo" >Gestion-App</a>
+  <nav>
+    <ul>
+      <li routerLinkActive="activo" [routerLinkActiveOptions]="{exact: true}">
+        <button mat-button routerLink="/">Home</button>
+      </li>
+      <li routerLinkActive="activo">
+        <button mat-button routerLink="/app-lista-estudiantes">Estudiantes</button>
+      </li>
+      <li routerLinkActive="activo">
+        <button routerLink="/app-lista-personas" mat-button>Personas</button>
+      </li>
+    </ul>
+  </nav>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

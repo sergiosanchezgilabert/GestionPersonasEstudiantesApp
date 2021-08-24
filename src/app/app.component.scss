@@ -1,0 +1,58 @@
+mat-toolbar {
+  background: #004a9f;
+  color: white;
+  display: flex;
+}
+
+button .active {
+  background-color: red;
+}
+
+.activo button {
+  background-color: green;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+}
+
+mat-sidenav {
+  margin: 16px;
+  width: 20px;
+  border-right: none;
+  background: #002b5c;
+  color: white;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+
+.content {
+  border-radius: 10px;
+  margin: 16px;
+  margin-left: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+  color: lightgray;
+}
+
+mat-sidenav-container {
+  height: calc(100vh - 65px);
+}
+
+.centrar{
+  margin-top: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.titulo{
+  color: white;
+  text-decoration: none;
+}

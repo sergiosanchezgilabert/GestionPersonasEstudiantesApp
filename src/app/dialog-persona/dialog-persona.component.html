@@ -1,0 +1,65 @@
+<!--<h1 mat-dialog-title>Editando Estudiante con ID: {{estudiante.id}}</h1>-->
+<div class="dialogo" mat-dialog-content>
+    <form class="formulario" [formGroup]="registerForm">
+        <div class="form-group">
+            <label for="user">User:</label><br>
+            <input type="name" name="user" required="" id="user" class="form-control" formControlName="user"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" required="" class="form-control" id="password"
+                formControlName="password"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="surname">Surname:</label><br>
+            <input type="name" name="surname" required="" id="surname" class="form-control"
+                formControlName="surname"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="company_email">Email Empresa:</label><br>
+            <input type="email" name="company_email" id="company_email" class="form-control"
+                formControlName="company_email"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="personal_email">Email Personal:</label><br>
+            <input type="email" name="personal_email" id="personal_email" class="form-control"
+                formControlName="personal_email"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="city">Ciudad:</label><br>
+            <input type="text" name="city" required="" id="city" class="form-control" formControlName="city"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="active">Activo:</label>
+            <input type="checkbox" name="active" id="active" class="form-control" formControlName="active"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="create_date">Fecha de creación:</label><br>
+            <input type="datetime" name="create_date" required="" id="create_date" class="form-control"
+                formControlName="create_date"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="imagen_url">URL de imagen:</label><br>
+            <input type="text" name="imagen_url" id="imagen_url" class="form-control" formControlName="imagen_url"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="termination_date">Fecha de terminación:</label><br>
+            <input type="datetime" name="termination_date" id="termination_date" class="form-control"
+                formControlName="termination_date"><br>
+        </div>
+
+        <div class="space-top" mat-dialog-actions>
+            <button mat-raised-button disable (click)="onNoClick()">CERRAR</button>
+            <button (click)="aniadirDatos()" mat-raised-button color="primary" cdkFocusInitial>ENVIAR</button>
+        </div>
+    </form>
+</div>
