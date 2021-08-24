@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
-import { ContadorComponent } from '../contador/contador.component';
+import { ContadorComponent } from 'src/app/contador/contador.component';
 import { DialogPersonaComponent } from '../dialog-persona/dialog-persona.component';
 import { PersonasService } from '../services/personas-service';
 

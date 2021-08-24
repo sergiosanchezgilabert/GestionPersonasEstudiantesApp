@@ -8,24 +8,30 @@
 
         <div class="form-group">
             <label for="branch">Branch:</label><br>
-            <input type="name" name="branch" required="" id="branch" class="form-control" formControlName="branch"><br>
+            <input type="name" name="branch" id="branch" class="form-control" formControlName="branch"><br>
         </div>
 
         <div class="form-group">
             <label for="coments">Coments:</label><br>
-            <input type="name" name="coments" required="" class="form-control" id="coments"
+            <input type="name" name="coments" class="form-control" id="coments"
                 formControlName="coments"><br>
         </div>
 
         <div class="form-group">
             <label for="num_hours_week">Nº Horas:</label><br>
-            <input type="name" name="num_hours_week" required="" id="num_hours_week" class="form-control"
+            <input type="name" name="num_hours_week" id="num_hours_week" class="form-control"
                 formControlName="num_hours_week"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="id_persona">Id Persona:</label><br>
+            <input type="name" name="id_persona" id="id_persona" class="form-control"
+                formControlName="id_persona"><br>
         </div>
 
         <div class="space-top" mat-dialog-actions>
             <button mat-raised-button disable (click)="onNoClick()">CERRAR</button>
-            <button (click)="aniadirDatos()" mat-raised-button color="primary" cdkFocusInitial>ENVIAR</button>
+            <button   [disabled]="!registerForm.valid"  (click)="aniadirDatos()" mat-raised-button color="primary" cdkFocusInitial>ENVIAR</button>
         </div>
     </form>
 </div>

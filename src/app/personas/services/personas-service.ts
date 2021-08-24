@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ResponsePersona } from '../model/req-response-persona';
+import { ResponsePersona } from '../models/req-response-persona';
 import { environment } from "C:/Users/sergio.sanchez/Desktop/Angular/Estudiantes/GestionPersonasEstudiantesApp-main/src/environments/environment.prod"
 
 @Injectable({

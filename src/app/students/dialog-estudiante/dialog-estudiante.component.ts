@@ -1,9 +1,9 @@
 import { Component, OnInit, Inject, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ResponseEstudiante } from '../model/req-response-estudiante';
-import { EstudiantesService } from '../services/estudiantes-service';
+import { ResponseEstudiante } from '../req-response-estudiante';
+import { EstudiantesService } from '../estudiantes-service';
 
 @Component({
   selector: 'app-dialog-estudiante',
@@ -14,7 +14,8 @@ export class DialogEstudianteComponent implements OnInit, OnChanges {
 
   @Input() estudiante: ResponseEstudiante;
 
-  editando:boolean=false;
+  editando: boolean = false;
+
 
   constructor(
     public dialogRef: MatDialogRef<DialogEstudianteComponent>,
@@ -28,18 +29,22 @@ export class DialogEstudianteComponent implements OnInit, OnChanges {
 
   registerForm = this.formBuilder.group({
 
-    num_hours_week: ['',Validators.required],
-    coments: ['',Validators.required],
-    branch: ['',Validators.required],
-    id:['',Validators.required]
+    num_hours_week: ['', Validators.required],
+    coments: ['', Validators.required],
+    branch: ['', Validators.required],
+    id_persona: ['', Validators.required],
+    id: ['']
   });
+
+
 
   ngOnInit(): void {
     if (this.data !== null) {
       this.estudiante = this.data.estudiante;
       this.registerForm.patchValue(this.data.estudiante);
-      this.editando=true;
+      this.editando = true;
     }
+    this.registerForm.valid;
   }
 
   ngOnChanges(change: SimpleChanges): void {
@@ -48,6 +53,9 @@ export class DialogEstudianteComponent implements OnInit, OnChanges {
     }
     if (change.data) {
       // this.registerForm.patchValue(this.data)
+    }
+    if (change.registerForm) {
+      this.registerForm.valid
     }
   }
 
@@ -66,4 +74,6 @@ export class DialogEstudianteComponent implements OnInit, OnChanges {
         })
     }
   }
+
+  
 }

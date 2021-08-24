@@ -2,8 +2,8 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { DialogEstudianteComponent } from '../dialog-estudiante/dialog-estudiante.component';
-import { ResponseEstudiante } from '../model/req-response-estudiante';
-import { EstudiantesService } from '../services/estudiantes-service';
+import { ResponseEstudiante } from '../req-response-estudiante';
+import { EstudiantesService } from '../estudiantes-service';
 
 @Component({
   selector: 'app-student',

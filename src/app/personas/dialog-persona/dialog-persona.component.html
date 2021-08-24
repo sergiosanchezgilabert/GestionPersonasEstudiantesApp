@@ -59,7 +59,7 @@
 
         <div class="space-top" mat-dialog-actions>
             <button mat-raised-button disable (click)="onNoClick()">CERRAR</button>
-            <button (click)="aniadirDatos()" mat-raised-button color="primary" cdkFocusInitial>ENVIAR</button>
+            <button [disabled]="!registerForm.valid" (click)="aniadirDatos()" mat-raised-button color="primary" cdkFocusInitial>ENVIAR</button>
         </div>
     </form>
 </div>

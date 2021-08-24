@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ResponsePersona } from '../model/req-response-persona';
+import { ResponsePersona } from '../models/req-response-persona';
 import { PersonasService } from '../services/personas-service';
 
 @Component({

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { DialogEstudianteComponent } from '../dialog-estudiante/dialog-estudiante.component';
-import { EstudiantesService } from '../services/estudiantes-service';
+import { EstudiantesService } from '../estudiantes-service';
 
 @Component({
   selector: 'app-lista-estudiantes',

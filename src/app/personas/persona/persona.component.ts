@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
-import { ResponsePersona } from '../model/req-response-persona';
+import { ResponsePersona } from '../models/req-response-persona';
 import { PersonasService } from '../services/personas-service';
 @Component({
   selector: 'app-persona',

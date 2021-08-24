@@ -1,9 +1,10 @@
 {
   "estudiantes": [
     {
-      "num_hours_week": "87",
+      "num_hours_week": "8745",
       "coments": "Anything",
       "branch": "angular",
+      "id_persona": "85",
       "id": 2
     },
     {
@@ -19,28 +20,17 @@
       "id": 4
     },
     {
-      "num_hours_week": "57",
-      "coments": "nada",
-      "branch": "dasd",
-      "id": 5
-    },
-    {
       "num_hours_week": "",
-      "coments": "nada",
-      "branch": "sdasd",
+      "coments": "",
+      "branch": "sdfasd",
       "id": 6
     },
     {
-      "num_hours_week": "5345",
-      "coments": "asdfasd",
-      "branch": "fsdafasd",
+      "num_hours_week": "5756",
+      "coments": "nada",
+      "branch": "wad",
+      "id_persona": "5",
       "id": 7
-    },
-    {
-      "num_hours_week": "9",
-      "coments": "sfdsdf",
-      "branch": "sfdfs",
-      "id": 8
     }
   ],
   "personas": [

@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChange, SimpleChanges } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ResponsePersona } from '../model/req-response-persona';
+import { ResponsePersona } from '../models/req-response-persona';
 import { PersonasService } from '../services/personas-service';
 
 @Component({

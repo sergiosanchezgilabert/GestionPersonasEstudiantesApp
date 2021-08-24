@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ResponseEstudiante } from '../model/req-response-estudiante';
+import { ResponseEstudiante } from './req-response-estudiante';
 import { environment } from "C:/Users/sergio.sanchez/Desktop/Angular/Estudiantes/GestionPersonasEstudiantesApp-main/src/environments/environment.prod";
 
 @Injectable({

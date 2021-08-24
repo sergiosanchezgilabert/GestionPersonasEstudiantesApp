@@ -2,7 +2,7 @@ import { Component, OnInit, Inject, Input,OnChanges, SimpleChanges } from '@angu
 import { FormBuilder, Validators } from '@angular/forms';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ResponsePersona } from '../model/req-response-persona';
+import { ResponsePersona } from '../models/req-response-persona';
 import { PersonasService } from '../services/personas-service';
 
 @Component({
@@ -29,8 +29,8 @@ export class DialogPersonaComponent implements OnInit {
     user: ['',Validators.required],
     password: ['',Validators.required],
     surname: ['',Validators.required],
-    company_email: ['',Validators.required],
-    personal_email: ['',Validators.required],
+    company_email: ['',[Validators.required,Validators.email]],
+    personal_email: ['',[Validators.required,Validators.email]],
     city: ['',Validators.required],
     active: [true,Validators.required],
     create_date: ['',Validators.required],
