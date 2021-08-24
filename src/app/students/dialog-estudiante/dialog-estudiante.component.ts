@@ -44,7 +44,6 @@ export class DialogEstudianteComponent implements OnInit, OnChanges {
       this.registerForm.patchValue(this.data.estudiante);
       this.editando = true;
     }
-    this.registerForm.valid;
   }
 
   ngOnChanges(change: SimpleChanges): void {
