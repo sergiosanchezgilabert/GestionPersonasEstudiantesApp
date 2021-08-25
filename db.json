@@ -1,7 +1,7 @@
 {
   "estudiantes": [
     {
-      "num_hours_week": "8745",
+      "num_hours_week": "7667",
       "coments": "Anything",
       "branch": "angular",
       "id_persona": "85",
@@ -23,7 +23,7 @@
       "num_hours_week": "5756",
       "coments": "nada",
       "branch": "wad",
-      "id_persona": "5",
+      "id_persona": "7",
       "id": 7
     },
     {
@@ -53,7 +53,7 @@
       "create_date": "2020-04-19T00:00:00.000+00:00",
       "imagen_url": "url1",
       "termination_date": "2020-08-25T00:00:00.000+00:00",
-      "id": 2
+      "id": 1
     },
     {
       "user": "Jesus",
@@ -66,33 +66,33 @@
       "create_date": "2020-04-19T00:00:00.000+00:00",
       "imagen_url": "url1",
       "termination_date": "2020-08-25T00:00:00.000+00:00",
+      "id": 2
+    },
+    {
+      "user": "JoseJuan",
+      "password": "rfgtfdgh",
+      "surname": "dfgfggf",
+      "company_email": "josecompany@gmail.com",
+      "personal_email": "josepersonal@gmail.com",
+      "city": "Jaen",
+      "active": true,
+      "create_date": "2020-04-19T00:00:00.000+00:00",
+      "imagen_url": "url1",
+      "termination_date": "2020-08-25T00:00:00.000+00:00",
       "id": 3
     },
     {
       "user": "JoseJuan",
-      "password": "ertr",
-      "surname": "ertr",
-      "company_email": "",
+      "password": "rfgtfdgh",
+      "surname": "dfgfggf",
+      "company_email": "josecompany@gmail.com",
       "personal_email": "josepersonal@gmail.com",
-      "city": "",
+      "city": "Jaen 74",
       "active": true,
-      "create_date": "",
-      "imagen_url": "",
-      "termination_date": "",
+      "create_date": "2020-04-19T00:00:00.000+00:00",
+      "imagen_url": "url1",
+      "termination_date": "2020-08-25T00:00:00.000+00:00",
       "id": 4
-    },
-    {
-      "user": "sdgdgd",
-      "password": "gdgdfg",
-      "surname": "dgdfgdg",
-      "company_email": "dgfdg",
-      "personal_email": "dfgfg",
-      "city": "gfdgdf",
-      "active": true,
-      "create_date": "",
-      "imagen_url": "",
-      "termination_date": "",
-      "id": 5
     }
   ]
 }
