@@ -1,0 +1,68 @@
+<div>
+    <form class="formulario" (ngSubmit)="submit()" [formGroup]="registerFormPersona">
+        <div class="form-group">
+            <label for="user">User:</label><br>
+            <input value={{persona.user}} type="name" name="user" required="" id="user" class="form-control"
+                formControlName="user"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label><br>
+            <input value={{persona.password}} type="password" name="password" required="" class="form-control"
+                id="password" formControlName="password"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="surname">Surname:</label><br>
+            <input value={{persona.surname}} type="name" name="surname" required="" id="surname" class="form-control"
+                formControlName="surname"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="company_email">Email Empresa:</label><br>
+            <input value={{persona.company_email}} type="email" name="company_email" id="company_email"
+                class="form-control" formControlName="company_email"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="personal_email">Email Personal:</label><br>
+            <input value={{persona.personal_email}} type="email" name="personal_email" id="personal_email"
+                class="form-control" formControlName="personal_email"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="city">Ciudad:</label><br>
+            <input value={{persona.city}} type="text" name="city" required="" id="city" class="form-control"
+                formControlName="city"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="active">Activo:</label>
+            <input value={{persona.active}} type="checkbox" name="active" id="active" class="form-control"
+                formControlName="active"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="create_date">Fecha de creación:</label><br>
+            <input value={{persona.create_date}} type="datetime" name="create_date" required="" id="create_date"
+                class="form-control" formControlName="create_date"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="imagen_url">URL de imagen:</label><br>
+            <input value={{persona.imagen_url}} type="text" name="imagen_url" id="imagen_url" class="form-control"
+                formControlName="imagen_url"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="termination_date">Fecha de terminación:</label><br>
+            <input value={{persona.termination_date}} type="datetime" name="termination_date" id="termination_date"
+                class="form-control" formControlName="termination_date"><br>
+        </div>
+
+        <div class="space-top">
+            <button type="submit" (click)="enviarDatos(persona.id)" mat-raised-button color="primary">ENVIAR</button>
+            <button mat-raised-button disable (click)="cancelar()">CANCELAR</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "contador.component.scss"
+    ],
+    "names": [],
+    "file": "contador.component.css"
+}

@@ -1,0 +1,39 @@
+/* ==== ELEMENTO/BUTTON ACTIVO EN TOOLBAR ==== */
+.activo button {
+    background-color: var(--color-background-nav-toolbar);
+}
+.ul-nav {
+    list-style: none;
+}
+.li-nav {
+    display: inline-block;
+}
+
+/* ==== TITULO DE APP ====*/
+.title-toolbar {
+    color: var(--color-leter-toolbar);
+    text-decoration: none;
+}
+
+/* ==== CENTRAR BOTON ANIADIR PERSONA ==== */
+.buttonscenter {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* ==== CENTRAR TEXTO ANIADIR PERSONA ==== */
+.centre-text-div {
+    margin-top: 10px;
+    text-align: center;
+    background-color: var(--color-leter-button);
+}
+
+/* ==== CARD DE STUDENT ====*/
+.card-student {
+    max-width: 200px;
+}
+
+/* ==== CARD DE PERSONA ====*/
+.card-persona {
+    max-width: 200px;
+}

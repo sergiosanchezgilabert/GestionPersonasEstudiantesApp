@@ -1,6 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-
+:root {
+    --color-backgorund-toolbar: #004a9f;
+    --color-leter-toolbar: white;
+    --color-background--sidenav-content: lightgray;
+    --color-background-nav-toolbar: green;
+    --color-leter-button: white;
+}

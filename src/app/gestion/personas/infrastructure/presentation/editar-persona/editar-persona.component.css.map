@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,8CAAI;AACZ,OAAO,CAAC,oDAAI",
+    "sources": [
+        "editar-persona.component.scss"
+    ],
+    "names": [],
+    "file": "editar-persona.component.css"
+}

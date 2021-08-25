@@ -1,0 +1,19 @@
+<div class="buttons buttons-center">
+    <button  mat-raised-button color="accent" (click)="openDialog()">Añadir Persona</button>
+</div>
+
+<p>Contador de borrados -> {{numero}}</p>
+<ng-container class="lista-card" *ngIf="personas.length > 0 else nopersona">
+    <mat-sidenav-container>
+        <mat-sidenav-content>
+            <div *ngFor="let persona of personas">
+                <app-persona (propagar)="procesarBorradoPersona($event)" [persona]="persona"></app-persona>
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</ng-container>
+
+<ng-template #nopersona>
+    <br>
+    <h2 class="centrar">No hay personas que mostrar</h2>
+</ng-template>

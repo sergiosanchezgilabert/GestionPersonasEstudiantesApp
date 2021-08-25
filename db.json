@@ -11,6 +11,7 @@
       "num_hours_week": "85",
       "coments": "sdfsdfsdf",
       "branch": "fsad",
+      "id_persona": "5",
       "id": 4
     },
     {
@@ -80,19 +81,6 @@
       "imagen_url": "url1",
       "termination_date": "2020-08-25T00:00:00.000+00:00",
       "id": 3
-    },
-    {
-      "user": "JoseJuan",
-      "password": "rfgtfdgh",
-      "surname": "dfgfggf",
-      "company_email": "josecompany@gmail.com",
-      "personal_email": "josepersonal@gmail.com",
-      "city": "Jaen 74",
-      "active": true,
-      "create_date": "2020-04-19T00:00:00.000+00:00",
-      "imagen_url": "url1",
-      "termination_date": "2020-08-25T00:00:00.000+00:00",
-      "id": 4
     }
   ]
 }

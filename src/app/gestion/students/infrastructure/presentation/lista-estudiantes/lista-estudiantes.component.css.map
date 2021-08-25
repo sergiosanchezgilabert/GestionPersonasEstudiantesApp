@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,8CAAI;AACZ,OAAO,CAAC,oDAAI",
+    "sources": [
+        "lista-estudiantes.component.scss"
+    ],
+    "names": [],
+    "file": "lista-estudiantes.component.css"
+}

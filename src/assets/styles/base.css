@@ -1,0 +1,28 @@
+/* ==== TOOLBAR ==== */
+mat-toolbar {
+  background-color: var(--color-backgorund-toolbar);
+  color: var(--color-leter-toolbar);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* ==== SIDENAV ==== */
+mat-sidenav-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  margin: 16px;
+  margin-left: 32px;
+}
+/*# sourceMappingURL=base.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,8CAAI;AACZ,OAAO,CAAC,oDAAI;AAGZ,AAAA,UAAU,CAAA;EACN,UAAU,EAAE,IAAI;CACnB",
+    "sources": [
+        "formulario-persona.component.scss"
+    ],
+    "names": [],
+    "file": "formulario-persona.component.css"
+}

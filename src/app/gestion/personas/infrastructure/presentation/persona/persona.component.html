@@ -1,0 +1,26 @@
+<mat-card class="card-persona">
+    <mat-card-header>
+        <div mat-card-avatar></div>
+        <mat-card-title *ngIf="persona.id">Persona {{persona.id}}</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image
+        src="https://d500.epimg.net/cincodias/imagenes/2016/07/04/lifestyle/1467646262_522853_1467646344_noticia_normal.jpg"
+        alt="Photo of persona">
+    <mat-card-content>
+        <p class="linea">ID: {{ persona.id }}</p>
+        <p class="linea">User: {{ persona.user }}</p>
+        <p class="linea">Password: {{ persona.password }}</p>
+        <p class="linea">Surname: {{ persona.surname }}</p>
+        <p class="linea">City: {{ persona.city }}</p>
+        <p class="linea">Active: {{ persona.active }}</p>
+        <p class="linea">Personal_email: {{ persona.personal_email }}</p>
+        <p class="linea">Company_email: {{ persona.company_email }}</p>
+        <p class="linea">Creation_date: {{ persona.create_date }}</p>
+        <p class="linea">Image_url: {{ persona.imagen_url }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" (click)=editar(persona.id)>EDITAR</button>
+        <button  mat-raised-button color="warn"(click)=borrar(persona.id)>ELIMINAR</button>
+    </mat-card-actions>
+</mat-card>

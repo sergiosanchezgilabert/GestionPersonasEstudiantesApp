@@ -1,0 +1,17 @@
+<div class="centre-button-div">
+    <button mat-raised-button color="accent" (click)=openDialog()>Añadir Estudiante</button>
+</div>
+<ng-container *ngIf="estudiantes.length > 0 else nostudent">
+    <mat-sidenav-container>
+        <mat-sidenav-content>
+            <div *ngFor="let estudiante of estudiantes">
+                <app-student (propagar)="procesarBorrado($event)" [estudiante]="estudiante"></app-student>
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</ng-container>
+
+<ng-template #nostudent>
+    <br>
+    <h2 class="centrar">No hay estudiantes que mostrar</h2>
+</ng-template>

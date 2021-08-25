@@ -1,107 +1,20 @@
+@import "settings";
+
+/* ==== TOOLBAR ==== */
 mat-toolbar {
-    background: #004a9f;
-    color: white;
+    background-color: var(--color-backgorund-toolbar);
+    color: var(--color-leter-toolbar);
     display: flex;
 }
 
-button .active {
-    background-color: red;
-}
+/* ==== SIDENAV ==== */
+mat-sidenav-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
-.activo button {
-    background-color: green;
-}
-ul {
-    list-style: none;
-}
-li {
-    display: inline-block;
-}
-
-mat-sidenav {
-    margin: 16px;
-    width: 20px;
-    border-right: none;
-    background: #002b5c;
-    color: white;
-    border-radius: 10px;
-    padding: 16px;
-    text-align: center;
-}
-
-.content {
     border-radius: 10px;
     margin: 16px;
     margin-left: 32px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 2rem;
-    color: lightgray;
-}
-
-mat-sidenav-container {
-    height: calc(100vh - 65px);
-}
-
-.centrar {
-    margin-top: 10px;
-    text-align: center;
-    background-color: white;
-}
-
-.titulo {
-    color: white;
-    text-decoration: none;
-}
-
-//listaPersonas
-mat-sidenav {
-    margin: 16px;
-    width: 200px;
-    border-right: none;
-    background: #002b5c;
-    color: white;
-    border-radius: 10px;
-    padding: 16px;
-    text-align: center;
-}
-
-.content {
-    border-radius: 10px;
-    margin: 16px;
-    margin-left: 32px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 2rem;
-    color: lightgray;
-}
-
-mat-sidenav-container {
-    height: calc(100vh - 65px);
-}
-
-.centrar {
-    margin-top: 10px;
-    text-align: center;
-    background-color: white;
-}
-
-.container-card {
-    display: flex;
-    justify-content: baseline;
-}
-
-//formulario-persona
-.formulario{
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-
-    margin-top: 10px;
 }
