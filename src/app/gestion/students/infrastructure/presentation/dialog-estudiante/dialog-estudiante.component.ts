@@ -2,6 +2,7 @@ import { Component, OnInit, Inject, Input, OnChanges, SimpleChanges } from '@ang
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
+import Swal from 'sweetalert2';
 import { ResponseEstudiante } from '../../../domain/IStudent';
 import { EstudiantesService } from '../../services/estudiantes-service';
 
@@ -62,13 +63,25 @@ export class DialogEstudianteComponent implements OnInit, OnChanges {
     if (this.editando == true) {
       this.estudiantesService.editarStudent(this.registerForm.value, this.estudiante.id)
         .subscribe(() => {
-          alert("Editado");
+          Swal.fire({
+            position: 'top',
+            icon: 'success',
+            title: 'Estudiante modificado',
+            showConfirmButton: false,
+            timer: 1500
+          })
           this.dialogRef.close(this.registerForm.value);
         })
     } else {
       this.estudiantesService.aniadirStudent(this.registerForm.value)
         .subscribe(() => {
-          alert("Añadido");
+          Swal.fire({
+            position: 'top',
+            icon: 'success',
+            title: 'Estudiante añadido',
+            showConfirmButton: false,
+            timer: 1500
+          })
           this.dialogRef.close(this.registerForm.value);
         })
     }
